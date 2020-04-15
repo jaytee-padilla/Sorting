@@ -13,10 +13,9 @@ def selection_sort( arr ):
         # TO-DO: swap
         # temp variable will hold the value of what's in the current index
         # the value of cur_index is overwritten by the smallest_index's value, so the temp is needed to record the value of cur_index before it's overwritten
-        temp = arr[cur_index]
-        arr[cur_index] = arr[smallest_index]
-        arr[smallest_index] = temp
-
+        # temp = arr[cur_index]
+        arr[cur_index], arr[smallest_index] = arr[smallest_index], arr[cur_index]
+        # arr[smallest_index] = temp
     # return the sorted array/list
     return arr
 
